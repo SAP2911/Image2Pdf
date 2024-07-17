@@ -15,4 +15,4 @@ class ImageUploadForm(forms.ModelForm):
                 raise forms.ValidationError('Unsupported file extension.')
         return imginst
 
-ImageUploadFormSet = forms.modelformset_factory(ImageInstance, form=ImageUploadForm, extra=5)
+ImageUploadFormSet = forms.modelformset_factory(ImageInstance, form=ImageUploadForm)
